@@ -1,4 +1,7 @@
 context = ChefCLI::Generator.context
+ChefDK::Generator.add_attr_to_context(:copyright_holder, 'Berchin John')
+ChefDK::Generator.add_attr_to_context(:license, 'apachev2')
+ChefDK::Generator.add_attr_to_context(:email, 'bershin@gmail.com')
 cookbook_dir = File.join(context.cookbook_root, context.cookbook_name)
 recipe_path = File.join(cookbook_dir, 'recipes', "#{context.new_file_basename}.rb")
 recipe_path_yml = File.join(cookbook_dir, 'recipes', "#{context.new_file_basename}.yml")

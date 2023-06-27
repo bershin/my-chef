@@ -1,4 +1,7 @@
 context = ChefCLI::Generator.context
+ChefDK::Generator.add_attr_to_context(:copyright_holder, 'Berchin John')
+ChefDK::Generator.add_attr_to_context(:license, 'apachev2')
+ChefDK::Generator.add_attr_to_context(:email, 'bershin@gmail.com')
 cookbook_dir = File.join(context.cookbook_root, context.cookbook_name)
 
 silence_chef_formatter unless context.verbose
