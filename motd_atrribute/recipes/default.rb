@@ -14,3 +14,6 @@ template '/etc/motd' do
 end
 
 node.default['motd_attributes']['message'] = "It's wonderful day!"
+node.default['ipaddress'] = '1.1.1.1'
+node.default['motd_attributes']['company'] = "NO'Reilly"
+node.default['motd_attributes']['message'] = "It's a horrible day!"
