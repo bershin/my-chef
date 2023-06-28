@@ -1,2 +1,4 @@
 This node is running on <%= node['virtualization']['system'] %>
 The IP address of the node is <%= node['ipaddress'] %>
+<%= node.default['motd_attributes']['message'] %>
+Welcome to <%= node['motd_attributes']['company'] %>
