@@ -1,4 +1,5 @@
-default['motd_attributes']['company'] = "O'Reilly" # rubocop:disable Style/FrozenStringLiteralComment
+override['motd_attributes']['company'] = "O'Reilly"  # rubocop:disable Style/FrozenStringLiteralComment
+default['motd_attributes']['company'] = "My'Reilly"# rubocop:disable Style/FrozenStringLiteralComment
 default['ipaddress'] = '1.1.1.1'
 default['motd_attributes']['java_bin'] = '/usr/local/bin/java'
 default['motd_attributes']['tomcat_home'] = '/usr/local/tomcat6'
